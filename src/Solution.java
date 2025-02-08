@@ -1,5 +1,3 @@
-import java.util.HashMap;
-
 public class Solution {
     public int[] minOperations(String boxes) {
         String fullBoxesSting = boxes.replaceAll("0", "");
