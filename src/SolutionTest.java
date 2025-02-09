@@ -9,7 +9,7 @@ class SolutionTest {
     private static final String FILE_PATH = "./Resources/testData.csv";
 
     @ParameterizedTest
-    @CsvFileSource(resources = FILE_PATH, delimiterString = ";")
+    @CsvFileSource(resources = FILE_PATH, delimiterString = ";", numLinesToSkip = 1)
     @DisplayName("merge Alternately tests")
     public void minOperations(String boxes, String expectedResultString) {
         Solution solution = new Solution();
